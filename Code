@@ -1,8 +1,10 @@
 proc power;
-  twosamplefreq test=pchi
-  groupproportions = (0.23 0.20) 
+  twosamplefreq test=pchi /*Specifies that the analysis is for a two-sample test for proportions using the Pearson Chi-square test (pchi).
+
+*/
+  groupproportions = (0.23 0.20) /*Specifies the assumed proportions for each of the two groups being compared-These are expected proportions, based on prior data, literature, or clinical expectations.*/
   nullproportiondiff = 0 
-  power = 0.80
+  power = 0.80 /*statistical power at 80%*/
   npergroup = .
-alpha= 0.05;
+alpha= 0.05; /*Sets the Type I error rate (α), or the probability of rejecting the null hypothesis when it is true, to 5%/0.05*/
 run;
