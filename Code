@@ -1,0 +1,8 @@
+proc power;
+  twosamplefreq test=pchi
+  groupproportions = (0.23 0.20) 
+  nullproportiondiff = 0 
+  power = 0.80
+  npergroup = .
+alpha= 0.05;
+run;
